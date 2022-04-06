@@ -19,6 +19,7 @@ async function main() {
     let planets = await getPlanets(movieNumber)
     let diameter = await process_planets(planets)
     console.log(diameter)
+    process.exit(0)
   } catch (error) {
     console.error(error.message)
     process.exit(1)
